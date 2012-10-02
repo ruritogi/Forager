@@ -15,20 +15,13 @@ namespace ConsoleApplication1{
             };
 
             string css = ".css"; // I want to find urls that ends with .css
-            Console.WriteLine("Stylesheet urls:");
+            Console.WriteLine("Cascading Style Sheet urls:");
             for(int i=0; i<url.Length; i++){
                 if(url[i].EndsWith(css)){ // If url ends with .css
                     Console.WriteLine(url[i]); // then display that url
                 }
             }
-            Console.WriteLine(); // Create a line space.
-            Console.WriteLine("Non stylesheet urls:");
-            for (int i = 0; i < url.Length; i++){
-                if (!url[i].EndsWith(css)){ // If url doesn't end with .css
-                    Console.WriteLine(url[i]); // then display that url
-                }
-            }
-            Console.ReadLine();
+            Console.ReadLine(); // waiting for ome action
         }
     }
 }
